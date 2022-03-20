@@ -31,8 +31,8 @@ Django Tutorial Part. 1부터 Part. 4까지 따라하기
 3. `python manage.py migrate`로 데이터베이스에 적용한다.
 
 ### View 작동시키기
-- HttpResponse 객체 반환
-  1. 단순 방법
+- Response 반환
+  1. HttpResponse
   ```python
   def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
